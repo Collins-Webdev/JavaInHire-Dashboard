@@ -2,7 +2,7 @@ let currentPage = 0;
 
 // Fonction pour charger les offres
 function loadOffers(page) {
-    fetch(`http://localhost:8080/api/offers?page=${page}`)
+    fetch(`https://javainhire-backend.onrender.com/api/offers?page=${page}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erreur réseau');
@@ -53,7 +53,7 @@ loadOffers(currentPage);
 
 // Fonction pour marquer une offre comme favorite
 function markAsFavorite(offerID) {
-    fetch(`http://localhost:8080/api/offers/${offerID}/favorite`, { method: 'POST' })
+    fetch(`https://javainhire-backend.onrender.com/api/offers/${offerID}/favorite`, { method: 'POST' })
         .then(response => {
             if (response.ok) {
                 alert('Offre marquée comme favorite !');
