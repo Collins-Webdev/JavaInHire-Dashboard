@@ -265,9 +265,9 @@ gantt
     title Feuille de Route
     dateFormat  YYYY-MM-DD
     section Améliorations
-    SSR               :active, 2024-03-01, 30d
-    Web Workers       :2024-04-01, 30d
-    Service Worker    :2024-05-01, 30d
+    SSR               :active, 2025-03-01, 30d
+    Web Workers       :2025-04-01, 30d
+    Service Worker    :2025-05-01, 30d
 ```
 
 ---
